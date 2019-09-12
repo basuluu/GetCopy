@@ -1,0 +1,35 @@
+1568296895106	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.tP2hZ1RJtl6I"
+*** You are running in headless mode.
+1568296895548	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568296895548	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568296895549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568296895549	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568296897100	Marionette	INFO	Listening on port 38117
+1568296897134	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:21935): dconf-WARNING **: 14:01:38.157: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+1568296909230	Marionette	INFO	Stopped listening on port 38117
+[Parent 21841, Gecko_IOThread] WARNING: pipe error (129): Соединение разорвано другой стороной: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358
+1568312997488	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kxkalF8WqazC"
+*** You are running in headless mode.
+1568312997942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568312997942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568312997942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568312997942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568312999575	Marionette	INFO	Listening on port 35093
+1568312999611	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:24582): dconf-WARNING **: 18:30:00.177: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+1568313011372	Marionette	INFO	Stopped listening on port 35093
+1568315707839	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "--headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.IJzYbb5VTs3Q"
+*** You are running in headless mode.
+1568315708280	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568315708281	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568315708281	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568315708281	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1568315710194	Marionette	INFO	Listening on port 36607
+1568315710246	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:26705): dconf-WARNING **: 19:15:10.918: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Отказано в доступе
+1568315722006	Marionette	INFO	Stopped listening on port 36607
+[Parent 26620, Gecko_IOThread] WARNING: pipe error (140): Соединение разорвано другой стороной: file /build/firefox-gS7uvX/firefox-69.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 358

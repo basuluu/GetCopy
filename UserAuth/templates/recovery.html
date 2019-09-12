@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>Укажите email используемый при регистрации.</h3>
+<form method="POST">
+{% csrf_token %}
+  <input id="id_email" type="email" name="email" required maxlength="200" placeholder="email">
+  <input type="submit" value="отправить">
+</form>
+<div class="alert alert-danger" role="alert">
+  {{ error }}
+</div>
+{% endblock %}

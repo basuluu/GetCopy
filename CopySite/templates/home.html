@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container px-md-5 text-center">
+<h2>Личный кабинет</h2>
+{% if user.is_authenticated %}
+	<h3>Приветствуем, <small>{{ user.username }}</small>!</h3>
+	<p><a href="/recovery">Сменить пароль</a> | <a href="/logout">Выйти</a></p>
+{% else %}
+	<br>
+	Для использования сервиса вам необходимо <a href="/login">авторизоваться</a>
+	<br>
+	Или создать <a href="/signup">новый аккаунт</a>
+{% endif %}
+</div>
+<div class="container px-md-5 py-5 text-center col-xl-8">
+	<form method="POST">
+	{% csrf_token %}
+	<div class="input-group mb-3">
+	  <input id="id_url" name="url" type="url" required placeholder="http://example.com" class="form-control" aria-describedby="button-addon2"/>
+	  <div class="input-group-append">
+	    <button class="btn btn-outline-primary" type="submit" id="button-addon2">GetCopy</button>
+	  </div>
+	</div>
+	<div class="form-check form-check-inline text-left" style="display: block">
+	  <input type="radio" name="downloadMethod" id="downloadSimple" value="simple" checked>
+	  <label class="m-0" for="downloadSimple">Быстрое скачивание - Рекомендуется</label>
+	</div>
+	<div class="form-check form-check-inline text-left" style="display: block">
+	  <input type="radio" name="downloadMethod" id="downloadSelenium" value="selenium">
+	  <label class="m-0" for="downloadSelenium">Усиленное скачивание</label> (пробуйте, только если быстрый режим не скачал)
+	</div>
+
+	</form>
+</div>
+<div class="px-md-5 mt-md-5 col-xl-10 mx-auto" id="_appendHere">
+<table class="table" align=center style="max-width:90%">
+	<thead class="thead-dark">
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">url</th>
+      <th scope="col">method</th>
+	      <th scope="col">Download</th>
+	    </tr>
+  </thead>
+{% for num, info in history.items %}
+	<tr>
+		<td>{{num}}</td>
+		<td><a href="{{info.url}}">{{info.url}}</a></td>
+  <td>
+    {% if info.method == 'simple' %}
+    обычное
+    {% else %}
+    усиленное
+    {% endif %}
+  </td>
+		<td>
+		{% if info.ready %}
+		<a href={{info.file}}>скачать</a>
+
+		{% else %}
+		<div class="spinner-border" role="status">
+		  <span class="sr-only">Loading...</span>
+		</div>
+		{% endif %}
+		</td>
+	</tr>
+{% endfor %}
+</table>
+</div>
+<script>
+    setInterval(function() {
+    	console.log('kek')
+        $.ajax({
+            type: "GET",
+            url: "get_history",  // URL to your view that serves new info
+        })
+        .done(function(response) {
+            $('#_appendHere').html(response);
+        });
+    }, 5000)
+</script>
+{% endblock %}

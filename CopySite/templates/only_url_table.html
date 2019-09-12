@@ -1,0 +1,33 @@
+<table class="table" align=center style="max-width:90%">
+	<thead class="thead-dark">
+	    <tr>
+	      <th scope="col">#</th>
+	      <th scope="col">url</th>
+      <th scope="col">method</th>
+	      <th scope="col">Download</th>
+	    </tr>
+  </thead>
+{% for num, info in history.items %}
+	<tr>
+		<td>{{num}}</td>
+		<td><a href="{{info.url}}">{{info.url}}</a></td>
+  <td>
+    {% if info.method == 'simple' %}
+    обычное
+    {% else %}
+    усиленное
+    {% endif %}
+  </td>
+		<td>
+		{% if info.ready %}
+		<a href={{info.file}}>скачать</a>
+
+		{% else %}
+		<div class="spinner-border" role="status">
+		  <span class="sr-only">Loading...</span>
+		</div>
+		{% endif %}
+		</td>
+	</tr>
+{% endfor %}
+</table>

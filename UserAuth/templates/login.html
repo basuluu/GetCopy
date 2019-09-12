@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p class="text-center"> Для доступа в личный кабинет, вам необходимо авторизоваться </p>
+<div class="pt-3 mx-auto text-center">
+<form method="POST">
+  {% csrf_token %}
+<div class="col-xl-3 col-md-6 col-sm-8 mx-auto">
+  <div class="input-group mb-3 ">
+  	<input id="id_username" type="text" name="username" required="" placeholder="login" class="form-control">
+  </div>
+  <div class="input-group mb-3 ">
+  	<input id="id_password" type="password" name="password" required="" placeholder="password"class="form-control">
+  </div>
+  <table style="width: 100%">
+  	<tr>
+	  <td align="left"><a href="/recovery/">Забыли пароль?</a></td>
+	  <td align="right"><button type="submit" class="btn btn-primary">Войти</button></td>
+	</tr>
+  </table>
+</div>
+</form>
+<p class="text-center">Впервые на GetCopy? Пройдите быструю <a href="/signup/">Регистрацию</a>
+
+</div>
+{% endblock %}
+

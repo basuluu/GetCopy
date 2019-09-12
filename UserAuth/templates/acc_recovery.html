@@ -1,0 +1,7 @@
+{% autoescape off %}
+Здравствуйте {{ user.username }},
+
+Пожалуйста, перейдите по ссылке снизу для смены пароля!:
+
+http://{{ domain }}{% url 'recovery' uidb64=uid token=token %}
+{% endautoescape %}
