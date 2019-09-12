@@ -11,14 +11,14 @@
 
 ## Интерфейс личного кабинета пользователя
 
-![alt text](images/интерфейс.png "Screenshot")
+![alt text](markdown_img/интерфейс.png "Screenshot")
 
 ## Интерфейс личного кабинета анонима
 
-![alt text](images/аноним.png "Screenshot")
+![alt text](markdown_img/аноним.png "Screenshot")
 
 ## Регистрация/вход/подтверждение по почте
 
-![alt text](images/Регистрация.png "Screenshot")
-![alt text](images/авторизация.png "Screenshot")
-![alt text](images/подтверждение.png "Screenshot")
+![alt text](markdown_img/Регистрация.png "Screenshot")
+![alt text](markdown_img/авторизация.png "Screenshot")
+![alt text](markdown_img/подтверждение.png "Screenshot")
