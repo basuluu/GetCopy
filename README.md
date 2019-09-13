@@ -17,10 +17,12 @@
 
 ![Screenshot](markdown_img/аноним.png "Screenshot")
 
-## Регистрация/вход/подтверждение по почте
+## Регистрация/вход
 
-![Screenshot](markdown_img/Регистрация.png "Screenshot") ![Screenshot](markdown_img/авторизация.png "Screenshot")
-![Screenshot](markdown_img/подтверждение.png "Screenshot")
+ Регистрация|Авторазиция
+:-------------------------:|:-------------------------:
+![Screenshot](markdown_img/Регистрация.png "Screenshot") | ![Screenshot](markdown_img/авторизация.png "Screenshot")
 
+## Подтверждение по почте
+> ![Screenshot](markdown_img/подтверждение.png "Screenshot")
 
-![alt-text-1](Регистрация.png "title-1") ![alt-text-2](Регистрация.png "title-2")
